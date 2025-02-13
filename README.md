@@ -35,6 +35,8 @@ spring.jpa.database-platform=org.hibernate.dialect.PostgreSQLDialect
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 
+**Download the BusDBExport.sql file from the 'db' directory and import it into postgresql to use the existing route when creating bookings**
+
 ### **3 Build & Run the application**
 ./gradlew bootRun
 
