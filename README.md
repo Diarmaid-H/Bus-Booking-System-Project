@@ -35,7 +35,7 @@ spring.jpa.database-platform=org.hibernate.dialect.PostgreSQLDialect
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 
-**Download the BusDBExport.sql file from the 'db' directory and import it into postgresql to use the existing route when creating bookings**
+**Download the BusDBExport.sql file from the 'db' directory and restore it in postgresql to use the existing route when creating bookings**
 
 ### **3 Build & Run the application**
 ./gradlew bootRun
@@ -49,7 +49,7 @@ POST /api/users/register
 }
 
 **Login & get JWT token**
-POST api/users/login
+POST /api/users/login
 {
   "email": "john@example.com",
   "password": "securepassword"
